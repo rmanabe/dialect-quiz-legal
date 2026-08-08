@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ed;
+  --fg: #2a1c12;
+  --muted: #6b5a48;
+  --accent: #e8572b;
+  --card: #ffffff;
+  --border: #eadfcf;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+header.page {
+  margin-bottom: 32px;
+}
+
+header.page a.back {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 12px 0 4px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.15em;
+  margin-top: 2em;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--card);
+  white-space: nowrap;
+}
+
+a { color: var(--accent); }
+
+.app-list {
+  list-style: none;
+  padding: 0;
+}
+
+.app-list li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.app-list .name {
+  font-weight: 600;
+}
+
+.app-list .links {
+  margin-top: 6px;
+  font-size: 0.9em;
+}
+
+.app-list .links a { margin-right: 14px; }
+
+footer {
+  margin-top: 48px;
+  color: var(--muted);
+  font-size: 0.85em;
+}
